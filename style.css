@@ -1,0 +1,84 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .clock-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border: 10px solid white;
+      border-radius: 50%;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+    .hand {
+      position: absolute;
+      width: 50%;
+      height: 4px;
+      background: white;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: transform 0.1s ease-in-out;
+    }
+
+    .hour {
+      height: 6px;
+      background: #ffdd59;
+    }
+
+    .minute {
+      height: 4px;
+      background: #0be881;
+    }
+
+    .second {
+      height: 2px;
+      background: #ff3f34;
+    }
+
+    .digital {
+      margin-top: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .date {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #f1f1f1;
+}
+h1{
+  font-family: sans-serif;
+}
+
+    @media (max-width: 480px) {
+      .clock-container {
+        width: 200px;
+        height: 200px;
+      }
+
+      .digital {
+        font-size: 1.5em;
+      }
+      .date {
+    font-size: 1em;
+  }
+    }
